@@ -23,13 +23,13 @@ namespace mvpa_dotnet
 
     internal class MvpaCalculator
     {
-        private const int _Mvpa_Heart_Rate_Threshold = 5;
+        private const int _Mvpa_Heart_Rate_Threshold = 118;
         private const int _Mvpa_Minimum_Period = 10;
 
         internal int Calculate()
         {
             return
-                File.ReadAllLines("fake.txt")
+                File.ReadAllLines("fakereal.txt")
                     .Select(d => int.Parse(d))
                     .Select(heart_rate => heart_rate > _Mvpa_Heart_Rate_Threshold ? 1 : 0)
                     .Aggregate(
