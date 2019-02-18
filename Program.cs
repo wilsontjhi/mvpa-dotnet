@@ -17,7 +17,7 @@ namespace mvpa_dotnet
             var totalMvpa = calculator.Calculate();
             sw.Stop();
 
-            Console.WriteLine($"Result is {totalMvpa}, and ellapsed time is {sw.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"Result is {totalMvpa}, and ellapsed time is {sw.Elapsed.TotalMilliseconds} ms.");
         }
     }
 
