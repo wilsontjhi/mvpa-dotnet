@@ -10,7 +10,7 @@ namespace mvpa_dotnet
     {
         static void Main(string[] args)
         {
-            var calculator = new MvpaCalculator("fakereal.txt");
+            var calculator = new MvpaCalculator("mock_heart_rate.txt");
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
